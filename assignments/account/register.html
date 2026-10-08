@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+		<script type="text/javascript" src="register.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../../assets/assignment.css"><link rel="stylesheet" href="../../assets/theme.css">
+</head>
+	<body><nav class="assignment-nav" aria-label="Portfolio"><a href="../../index.html#assignments">My Portfolio</a><a href="../../project.html">Projects</a><a href="../../references.html">References</a></nav>
+		<form name="myRegister" id="myRegister" action="login.html">
+			<fieldset>
+				<legend>Register</legend>
+				<span>* require</span> <br>
+				<span id="errormsg"></span> <br>
+				First name*: 
+				<input type="text" name="firstname" required>
+				Last name*: 
+				<input type="text" name="lastname" required>
+				<br>
+				Gender*: 
+				<input type="radio" name="gender" value="male" >Male
+				<input type="radio" name="gender" value="female" >Female
+				<input type="radio" name="gender" value="other" >Other
+				<br>
+				Birthday*: 
+				<input type="date" name="bday" required>
+				<br>
+				Email address*: 
+				<input type="email" name="email" required>
+				<br>
+				Username*: 
+				<input type="text" name="username" required>
+				<br>
+				Password*: 
+				<input type="password" name="password" required>
+				<br>
+				Retype Password*: 
+				<input type="password" name="password" required>
+				<br>
+				<input type="submit" value="Register" id="registerBtn">
+				<input type="reset" value="Reset" id="resetBtn">
+			</fieldset>
+		</form><p class="assignment-source">แบบฝึกหัดฟอร์ม ใช้ข้อมูลและรหัสผ่านทดลองเท่านั้น · <a href="register.html">Register</a> · <a href="login.html">Login</a></p>
+
+		
+	</body>
+</html>

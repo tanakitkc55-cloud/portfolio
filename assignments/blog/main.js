@@ -1,0 +1,4 @@
+let postCount=0;
+window.addEventListener('DOMContentLoaded',()=>{document.getElementById('top').textContent='Blog / Post & Reply';document.getElementById('post').addEventListener('click',postFunction);document.getElementById('clear').addEventListener('click',clearFunction);});
+function postFunction(){const input=document.getElementById('message'),status=document.getElementById('blog-status');if(!input.value.trim()){status.textContent='กรุณาพิมพ์ข้อความก่อนโพสต์';return;}if(postCount>=3){status.textContent='ครบ 3 ข้อความแล้ว กด Clear เพื่อเริ่มใหม่';return;}document.getElementById(['topic','reply1','reply2'][postCount++]).textContent=input.value.trim();input.value='';status.textContent='โพสต์แล้ว '+postCount+' / 3';input.focus();}
+function clearFunction(){['topic','reply1','reply2','message','blog-status'].forEach(id=>{const e=document.getElementById(id);if(id==='message')e.value='';else e.textContent='';});postCount=0;}

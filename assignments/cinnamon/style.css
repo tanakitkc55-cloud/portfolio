@@ -1,0 +1,257 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf7f5;
+  color: #333333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* UI Micro-interactions Transition */
+a, button, img, .step-card, .gallery-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/*head */
+.hero-section {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.main-title {
+  color: #8c2a2a;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #7d6b62;
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*main */
+.card-layout {
+  width: 90%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eee4dc;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(140, 42, 42, 0.05);
+}
+
+/*banner */
+.banner-wrapper {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.food-main-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 16px;
+  border: 4px solid #f7ece1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  vertical-align: middle;
+}
+
+.food-main-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px rgba(140, 42, 42, 0.15);
+}
+
+.content-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  color: #8c2a2a;
+  font-size: 22px;
+  font-weight: 600;
+  border-left: 6px solid #c95d43;
+  padding-left: 14px;
+  margin-bottom: 20px;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+}
+
+.ingredients-img-wrap {
+  flex: 1 1 260px;
+  text-align: center;
+}
+
+.section-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #eee4dc;
+}
+
+.ingredients-box {
+  flex: 2 1 360px;
+  background-color: #fffbf8;
+  border: 1px solid #f3e5db;
+  border-radius: 14px;
+  padding: 24px 30px;
+}
+
+.ingredient-list {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.ingredient-list li {
+  padding: 8px 0;
+  font-size: 14.5px;
+  color: #4a3b32;
+}
+
+.gallery-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-card {
+  flex: 1 1 300px;
+  background-color: #fffbf8;
+  border: 1px solid #eddcd2;
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  border-color: #c95d43;
+  box-shadow: 0 8px 18px rgba(201, 93, 67, 0.12);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery-card p {
+  font-size: 13.5px;
+  color: #7d6b62;
+  font-weight: 500;
+}
+
+/* =========================================
+   8. Visual Guide & Steps (Flexbox)
+   ========================================= */
+.steps-visual-banner {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.steps-guide-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #eee4dc;
+}
+
+.steps-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.step-card {
+  flex: 1 1 calc(50% - 16px);
+  min-width: 280px;
+  background-color: #ffffff;
+  border: 1px solid #eddcd2;
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+}
+
+.step-card:hover {
+  transform: translateY(-3px);
+  border-color: #c95d43;
+  box-shadow: 0 6px 15px rgba(201, 93, 67, 0.1);
+}
+
+.step-badge {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #c95d43;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.step-card h3 {
+  font-size: 16px;
+  color: #4a3b32;
+  margin-bottom: 6px;
+}
+
+.step-card p {
+  font-size: 13.5px;
+  color: #666666;
+}
+
+.serving-banner {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.serving-img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 14px;
+  border: 2px solid #eee4dc;
+}
+
+/* =========================================
+   9. Footer & Link Styles
+   ========================================= */
+.footer {
+  text-align: center;
+  font-size: 13.5px;
+  color: #8c6e63;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #c95d43;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #8c2a2a;
+}

@@ -1,0 +1,45 @@
+/* Theme shared by all assignments */
+* { box-sizing: border-box; }
+html { background: #edf3fa; }
+body { margin: 0; padding: 24px; background: #edf3fa; color: #263442; font: 16px/1.7 Tahoma, Arial, sans-serif; }
+a { color: #244f79; }
+h1, h2, h3, .main-title, .section-title { color: #234f83; }
+h1 { font-size: 30px; line-height: 1.4; }
+p, span, input, select, textarea, button { font-family: inherit; }
+p { font-size: 16px; }
+.assignment-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; width: 100%; max-width: 1140px; padding: 16px 20px; margin: 0 auto 24px; background: #d9e8fa; border: 1px solid #b3cae5; border-bottom: 3px solid #527fb4; border-radius: 9px; text-align: left; }
+.assignment-nav a { color: #234f83; background: transparent; box-shadow: none; padding: 4px 8px; font-size: 16px; font-weight: bold; text-decoration: none; }
+.assignment-nav a:hover { background: white; border-radius: 4px; transform: none; }
+button:not(.square), input[type=submit], input[type=reset], #start, #submitBtn { background: #376ba5; color: white; border: 0; border-radius: 5px; padding: 9px 16px; box-shadow: none; font: inherit; cursor: pointer; min-height: 44px; }
+button:not(.square):hover, input[type=submit]:hover { background: #285382; transform: none; }
+button:disabled { opacity: .55; cursor: default; }
+input:not([type=radio]):not([type=submit]):not([type=reset]), textarea, select { background: white; color: #263442; border: 1px solid #a9bfd9; border-radius: 5px; padding: 8px; font: inherit; max-width: 100%; }
+fieldset, form fieldset, .grid-card, .card-layout, .ingredients-box, .gallery-card, .step-card, .ad-card, #wrapper, #loginform, body:has(#message)>div:not(.assignment-nav), body:has(#nav-top) #layer>div { background: white; border: 1px solid #bccbd9; border-top: 3px solid #8eacd0; border-radius: 9px; box-shadow: 0 2px 5px rgba(35,79,131,.06); backdrop-filter: none; }
+legend { background: #e2edfb; color: #234f83; border-radius: 5px; }
+.grid-card h1, .grid-card h2 { color: #234f83; background: #e2edfb; border-radius: 6px; box-shadow: none; }
+.section-title { border-bottom-color: #e4a74c; }
+.step-badge { background: #e4a74c; color: #263442; }
+.subtitle, .step-card p, .gallery-card p, .footer { color: #526170; }
+.food-main-img, .section-img, .gallery-img, .steps-guide-img, .serving-img { border-color: #b3cae5; border-radius: 6px; box-shadow: none; }
+.step-card:hover, .gallery-card:hover, .food-main-img:hover { transform: none; box-shadow: none; border-color: #8eacd0; }
+.menu-item { border-radius: 5px; color: #244f79; }
+.menu-item.active, .menu-item:hover { background: #d9e8fa; color: #234f83; border-color: #8eacd0; }
+.sidebar-header { background: #e2edfb; color: #234f83; }
+ul { background: transparent; border-color: #e4a74c; box-shadow: none; }
+.table_stat th, .table_Border th { background: #376ba5; }
+body:has(#start) #layer { border: 2px solid #527fb4; border-radius: 9px; background: white; box-shadow: none; }
+body:has(#start) { background: #edf3fa; }
+#clock { background: #fff0d6; color: #77500f; border-color: #e4a74c; }
+#wrapper, #loginform { padding: 20px; width: 680px; max-width: 100%; }
+#loginfields { flex-wrap: wrap; }
+#chatbox { width: 100%; background: #f5f8fc; border: 1px solid #b3cae5; border-radius: 6px; }
+#userMsg { width: 75%; }
+#statusinfo { overflow-wrap: anywhere; }
+body:has(#wrapper) { text-align: left; }
+body:has(#wrapper) p, body:has(#wrapper) span { font-size: 16px; }
+.stock-page { max-width: 960px; margin: auto; }
+.stock-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.stock-card { background: white; padding: 20px; border: 1px solid #bccbd9; border-top: 3px solid #8eacd0; border-radius: 9px; }
+.stock-card h2 { font-size: 20px; }
+:focus-visible { outline: 3px solid #e4a74c; outline-offset: 3px; }
+@media(max-width:600px) { body { padding: 15px; } h1, .main-title { font-size: 26px; } .card-layout { width:100%; padding:18px; } .ingredients-container, .gallery-flex-container, .steps-flex-container { flex-direction:column; } .ingredients-img-wrap, .ingredients-box, .gallery-card, .step-card { width:100%; min-width:0; } .stock-grid { grid-template-columns:1fr; } }

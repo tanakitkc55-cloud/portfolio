@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pizza - Responsive Grid Hub</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- เลือกใช้ Stylesheet ได้: 'modern.css' (Modern Grid & Units) หรือ 'main.css' (Classic Slide Style) -->
+    <!-- <link id="theme-style" rel='stylesheet' type='text/css' media='screen' href='modern.css'> -->
+    <link id="theme-style" rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<link rel="stylesheet" href="../../assets/assignment.css"><link rel="stylesheet" href="../../assets/theme.css">
+</head>
+
+<body><nav class="assignment-nav" aria-label="Portfolio"><a href="../../index.html#assignments">My Portfolio</a><a href="../../project.html">Projects</a><a href="../../references.html">References</a></nav>
+
+    <div class="grid-container">
+        <!-- 1. Header Section (Spans all columns) -->
+        <div id="header" class="grid-card">
+            <div>
+                <img class="logo-img" src="pic/pizza logo.avif" alt="Pizza Logo">
+            </div>
+            
+        </div>
+
+        <!-- 2. Menu Navigation Sidebar (Column 1 on Desktop) -->
+        <div id="menu" class="grid-card">
+            <div class="menu-title">Navigation</div>
+            <a href="#recipe" class="menu-item active">📰 Recipe</a>
+            <a href="#ingredients" class="menu-item">🥗 Ingredients</a>
+            <a href="#dip" class="menu-item">🧀 FOR THE PIZZA DIP</a>
+            <a href="#instructions" class="menu-item">❓ Instructions</a>
+        </div>
+
+        <!-- 3. Main Content Section (Column 2 on Desktop) -->
+        <div id="main" class="grid-card">
+            <!-- Pikachu Profile Banner & Image -->
+            <div id="recipe" class="content-section">
+                <h1><span>Hi!!,</span> u want pizza?</h1>
+                <img id="Mpizza" src="pic/pizza-dip-9.jpeg" alt="mpizza">
+            </div>
+            
+            <hr>
+            
+            <!-- Quick Stats -->
+            <div id="ingredients" class="left_page">
+                <ul>
+                    <li>16.3 ounce can Grands biscuit dough, 8 count</li>
+                    <li>¼ cup melted butter</li>
+                    <li>2 teaspoons parmesan cheese, grated</li>
+					<li>1 teaspoon Italian seasoning, click link for the recipe</li>
+                </ul>
+            </div>
+            
+            <!-- Base Stats Table -->
+            <div id="dip" class="content-section">
+                <table class="table_stat">
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>MANY?</th>
+                    </tr>
+                    <tr>
+                        <td>ounces cream cheese, softened</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>cup ricotta cheese</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>teaspoons Italian seasoning, divided</td>
+                        <td>3</td>
+                    </tr>
+					<tr>
+                        <td>cup marinara sauce, or pizza sauce</td>
+                        <td>1</td>
+                    </tr>
+					<tr>
+                        <td>cups mozzarella cheese, grated</td>
+                        <td>1 ½</td>
+                    </tr>
+					<tr>
+                        <td>slices pepperoni, quartered (optional topping)</td>
+                        <td>8</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!-- Friends Flex Gallery -->
+            <div id="instructions" class="content-section">
+                <h2>Instructions</h2>
+                <div class="flex_container"><ol> 
+				<li>- Preheat the oven to 350°F.</li>
+                    <li>- Cut each biscuit in half, then roll each half of dough into a ball.</li>
+                    <li>- Combine the melted butter, parmesan cheese, and 1 teaspoon Italian seasoning in a bowl.</li>
+					<li>- In a large bowl, use an electric mixer, or stand mixer, to combine the cream cheese, ricotta cheese and 2 teaspoons Italian seasoning.</li>
+					<li>- Spread the cream cheese mixture in the bottom of the skillet in the middle of the balls of dough.</li>
+					<li>- Top with the marinara sauce, shredded mozzarella cheese and remaining 1 teaspoon Italian seasoning. Top with pepperonis, or another pizza topping of your choice.</li>
+					<li>- Place in the oven and bake for 25-30 minutes.</li>
+                
+				</ol>
+                </div>
+            </div>
+		</div>
+            
+
+        <!-- 4. Right Sidebar Ads & Extras (Column 3 on Desktop) -->
+        <div id="right" class="grid-card">
+            <div id="newsletter" class="content-section">
+                <div class="sidebar-header">More!</div>
+                <div class="ad-card"><img src="pic/pizza-dip-8.jpeg" alt="Pizza8 Promo"></div>
+                <div class="ad-card"><img src="pic/pizza-dip-6.jpeg" alt="Pizza6's Promo"></div>
+                <div class="rotate-pizza-container"><img class="rotate-pizza" src="pic/pizza-pixel-art-free-vector.webp" alt="Pizza spin"></div>
+            </div>
+        </div>
+
+        <!-- 5. Footer Section (Spans all columns) -->
+        <div id="footer" class="grid-card">
+            <div>
+                <span>
+                    source:
+                    <a href="https://whitneybond.com/pizza-dip/" target="_blank">Reference</a>
+                </span>
+                <br>
+                <span>
+                    Images from:
+                    <a href="https://favpng.com/" target="_blank">Reference</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script for Live Stylesheet Switching during class teaching -->
+    <script src="recipe.js" defer></script>
+</body>
+</html>

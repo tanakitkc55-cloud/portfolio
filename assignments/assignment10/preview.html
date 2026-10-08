@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chitchat</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		
+		<script type="text/javascript" src="preview.js"></script>
+	<link rel="stylesheet" href="theme.css">
+</head>
+	<body>
+<nav class="assignment-nav"><a href="../../index.html#assignments">My Portfolio</a><span>Assignment 10 · Chitchat Demo</span></nav>
+		
+		<!-- the code was adapted from https://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931 -->
+		<p>ตัวอย่างแชตในเบราว์เซอร์นี้ ไม่ได้เชื่อมต่อผู้ใช้คนอื่น</p>
+<div id="loginform">
+			<div id="statusinfo">
+				<span>Connection: <span id="connection">Local demo</span></span> | 
+				<span>Your ID: <span id="your_id">Demo</span></span>
+			</div>
+			<div id="loginfields">
+				<span>Username: </span><input type="text" id="userInput" value="">
+				<button id="clickok">OK</button>
+			</div>
+		</div>
+		<div id="wrapper">
+		    <div id="menu">
+		        <p class="welcome">Welcome,  <span id="username"></span></p>
+		        
+		    </div>
+		     
+		    <div id="chatbox"></div>
+		     
+		    
+	        <input name="userMsg" type="text" id="userMsg" size="63" />
+	        <button id="submitmsg" disabled>Send</button>
+		    
+		</div>
+	</body>
+	
+</html>

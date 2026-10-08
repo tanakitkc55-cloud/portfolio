@@ -1,0 +1,311 @@
+/* รูปแบบพื้นฐาน ใช้ร่วมกันทุกหน้า Portfolio */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: #141414;
+    color: #f5f5f5;
+    font-family: 'Kanit', Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+a { color: #e3be75; }
+p { margin: 10px 0; }
+h1, h2, h3 { line-height: 1.45; }
+h1 { font-size: 38px; }
+h2 { font-size: 28px; }
+h3 { font-size: 21px; margin: 0 0 14px; }
+header, main, footer { max-width: 1120px; margin: auto; padding: 24px 32px; }
+/* เมนูหลัก */
+header { display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #414141; }
+.brand { color: #f5f5f5; font-size: 24px; font-weight: 600; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { padding: 7px 12px; border-radius: 7px; text-decoration: none; color: #c8c8c8; }
+nav a:hover, nav a[aria-current] { color: #d4ae64; background: #3c3324; }
+/* รูปและข้อความแนะนำตัว */
+.hero { display: flex; align-items: center; gap: 40px; padding: 36px 40px; margin: 12px 0 44px; background: #242424; border: 1px solid #414141; border-radius: 16px; }
+.profile-text { flex: 1; min-width: 0; }
+.hero h1 { font-size: 45px; margin: 0 0 14px; color: #f5f5f5; }
+.hero p { color: #c8c8c8; max-width: 520px; margin-bottom: 20px; }
+.portrait { width: 220px; flex-shrink: 0; border-radius: 12px; overflow: hidden; }
+.portrait img { display: block; width: 100%; height: auto; }
+.button, .card-link { display: inline-block; padding: 9px 18px; border-radius: 7px; background: #d4ae64; color: #ffffff; text-decoration: none; font-size: 15px; }
+.button { margin: 6px 10px 0 0; }
+.hero .button:not(.primary-button) { background: #202020; color: #d4ae64; }
+.button:hover, .card-link:hover { background: #b58e48; color: #ffffff; }
+/* About Me และกล่องข้อมูล */
+section { margin: 42px 0; }
+section > h2 { margin: 0 0 24px; }
+.about-section { padding: 32px; background: #202020; border: 1px solid #414141; border-radius: 16px; }
+.about-section > h2 { text-align: center; font-size: 32px; }
+.about-section > h2::after { content: ''; display: block; width: 65px; height: 3px; margin: 12px auto; border-radius: 3px; background: #e3be75; }
+.about-intro { max-width: 800px; margin: 0 auto 28px; text-align: center; font-size: 18px; color: #c8c8c8; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.card { padding: 24px; background: #242424; border: 1px solid #414141; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,.2); }
+.card img { width: 100%; height: 190px; object-fit: cover; border-radius: 8px; margin-bottom: 16px; }
+.muted { color: #c8c8c8; }
+.hobbies-list { margin: 0; padding-left: 22px; }
+.hobbies-list li { margin: 5px 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags span { background: #202020; color: #cccccc; padding: 4px 9px; border-radius: 5px; }
+.skills-icons { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 18px; }
+.card .skills-icons img { width: 40px; height: 40px; margin: 0; border-radius: 0; object-fit: contain; }
+/* งานในชั้นเรียน: ปุ่มอยู่ตำแหน่งเดียวกัน */
+#assignments .card { display: flex; flex-direction: column; align-items: flex-start; }
+#assignments .card p { margin: 0 0 20px; }
+#assignments .card-link { margin-top: auto; }
+/* ช่องทางติดต่อ */
+#contact .card { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+#contact .card p { margin: 0; overflow-wrap: anywhere; }
+#contact .contact-icon { width: 22px; height: 22px; margin: 0 6px 0 0; border-radius: 0; vertical-align: middle; object-fit: contain; }
+#contact a { font-size: 15px; }
+/* หน้าโปรเจกต์ */
+.projects-page { margin-top: 12px; }
+.projects-heading { max-width: 760px; text-align: center; margin: 16px auto 36px; }
+.projects-heading h1 { margin: 0 0 12px; font-size: 44px; }
+.projects-heading h1 span { color: #d4ae64; }
+.projects-heading p { color: #c8c8c8; font-size: 18px; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.project-card { padding: 24px; background: #242424; border: 1px solid #414141; border-radius: 14px; }
+.project-card h2 { margin: 16px 0 10px; font-size: 30px; overflow-wrap: anywhere; }
+.project-card p { color: #c8c8c8; }
+.project-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.project-tags span { background: #3c3324; color: #d4ae64; font-size: 14px; padding: 3px 12px; border-radius: 20px; white-space: nowrap; }
+.project-tags > br { display: none; }
+.project-tags > div, .project-tags > p { margin: 0; }
+.project-card hr { height: 1px; background: #414141; border: none; margin: 22px 0; }
+.project-media { background: #111111; border-radius: 8px; overflow: hidden; }
+.project-media p { padding: 70px 15px; margin: 0; text-align: center; }
+.project-media img, .project-media video, .project-media iframe { display: block; width: 100%; max-width: 100%; border: none; }
+/* ส่วนท้ายและการใช้งานคีย์บอร์ด */
+footer { border-top: 1px solid #414141; color: #a8a8a8; font-size: 14px; }
+.skip { position: absolute; top: -100px; background: #242424; padding: 10px; }
+.skip:focus { top: 0; }
+a:focus-visible, button:focus-visible { outline: 3px solid #e3be75; outline-offset: 3px; }
+button, input, select, textarea { font-family: inherit; }
+/* หน้าจอแท็บเล็ต */
+@media (max-width: 850px) {
+    header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .hero { padding: 28px; gap: 24px; }
+    .hero h1 { font-size: 36px; }
+    .portrait { width: 190px; }
+    #contact .card { grid-template-columns: 1fr; gap: 14px; }
+}
+/* หน้าจอมือถือ */
+@media (max-width: 600px) {
+    header, main, footer { padding: 18px; }
+    nav { gap: 3px; }
+    nav a { padding: 6px 8px; font-size: 14px; }
+    .hero { flex-direction: column-reverse; align-items: stretch; padding: 24px; margin-bottom: 30px; }
+    .portrait { width: 180px; margin: auto; }
+    .hero h1 { font-size: 32px; }
+    .grid, .project-grid { grid-template-columns: 1fr; gap: 16px; }
+    .about-section { padding: 24px 18px; }
+    .about-intro { text-align: left; font-size: 16px; }
+    .card, .project-card { padding: 20px; }
+    section { margin: 30px 0; }
+    .projects-heading h1 { font-size: 36px; }
+    .project-card h2 { font-size: 26px; }
+}
+
+/* โทน Persona 5: แดง ดำ ขาว */
+.brand {
+    color: #ffffff;
+}
+.hero {
+    border-left: 4px solid #e3be75;
+}
+.about-section > h2::after {
+    background: #e3be75;
+}
+.hero .button:not(.primary-button) {
+    background: #333333;
+    color: #ffffff;
+}
+nav a:hover, nav a[aria-current] {
+    background: #d4ae64;
+    color: #ffffff;
+}
+.project-tags span {
+    background: #d4ae64;
+    color: #ffffff;
+}
+/* พื้นอ่อนช่วยให้โลโก้สีดำยังมองเห็นบนธีมมืด */
+.card .skills-icons img {
+    background: #ffffff;
+    padding: 4px;
+    border-radius: 5px;
+}
+#contact .contact-icon {
+    background: #ffffff;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+/* หัวข้อกระชับสำหรับธีมแดง ดำ ขาว */
+h1, h2, h3, .brand {
+    font-family: 'Oswald', 'Kanit', sans-serif;
+    font-weight: 600;
+}
+.brand, .projects-heading h1 {
+    letter-spacing: 0.5px;
+}
+body {
+    font-family: 'Kanit', Tahoma, Arial, sans-serif;
+}
+
+/* แนว Sandfall: ดำและทองทราย */
+body {
+    background: #191919;
+    color: #f3eee3;
+}
+header {
+    background: #080808;
+    border-bottom-color: #35312a;
+}
+.brand {
+    text-transform: uppercase;
+    color: #f5f2eb;
+}
+nav a:hover, nav a[aria-current] {
+    background: #30291e;
+    color: #e3be75;
+}
+.hero {
+    background: #202020;
+    border: 1px solid #5b5039;
+    border-radius: 0;
+    padding: 50px 40px;
+    min-height: 400px;
+}
+.hero h1 {
+    color: white;
+    font-size: 48px;
+}
+.hero p {
+    color: #e6e1d7;
+}
+.portrait {
+    border: 2px solid #e3be75;
+    border-radius: 3px;
+}
+.button, .card-link {
+    background: #e3be75;
+    color: #181818;
+    border-radius: 3px;
+}
+.button:hover, .card-link:hover {
+    background: #f0d294;
+    color: #181818;
+}
+.hero .button:not(.primary-button) {
+    background: #252525;
+    color: #f0d294;
+    border: 1px solid #8b744d;
+}
+.about-section {
+    background: #e3be75;
+    color: #202020;
+    border-color: #e3be75;
+    border-radius: 3px;
+}
+.about-section h2, .about-intro {
+    color: #202020;
+}
+.about-section > h2::after {
+    background: #202020;
+}
+.about-section .card {
+    background: #f3dfb6;
+    color: #252525;
+    border-color: #cfaa64;
+}
+.card, .project-card {
+    border-color: #544a37;
+    border-radius: 4px;
+}
+.projects-heading h1 span {
+    color: #e3be75;
+}
+.project-tags span {
+    background: #e3be75;
+    color: #202020;
+}
+footer {
+    border-color: #544a37;
+}
+@media (max-width: 600px) {
+    .hero {
+        padding: 26px 22px;
+        min-height: 0;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+/* ดำอมเทาและทองแชมเปญ */
+body {
+    background: radial-gradient(ellipse at top left, rgba(216,190,136,0.09), transparent 45%),
+                radial-gradient(ellipse at bottom right, rgba(216,190,136,0.05), transparent 40%),
+                #151515;
+    color: #f2eee6;
+}
+a {
+    color: #d8be88;
+}
+header {
+    background: #151515;
+    border-bottom-color: #3e382d;
+}
+nav a:hover, nav a[aria-current] {
+    background: #302a20;
+    color: #d8be88;
+}
+.hero, .card, .project-card {
+    background: #232323;
+    border-color: #4b4233;
+}
+.hero h1, .brand, .projects-heading h1 {
+    color: #f2eee6;
+}
+.hero p, .muted, .project-card p, .projects-heading p {
+    color: #bdb7ac;
+}
+.portrait {
+    border-color: #d8be88;
+}
+.button, .card-link, .project-tags span {
+    background: #d8be88;
+    color: #151515;
+}
+.button:hover, .card-link:hover {
+    background: #e6cea0;
+    color: #151515;
+}
+.hero .button:not(.primary-button) {
+    background: #2b2822;
+    color: #d8be88;
+    border-color: #7b6b4b;
+}
+.about-section {
+    background: #d8be88;
+    border-color: #d8be88;
+}
+.about-section .card {
+    background: #efe2c6;
+    border-color: #c3aa77;
+    color: #252525;
+}
+.projects-heading h1 span {
+    color: #d8be88;
+}
+.project-media {
+    background: #1a1a1a;
+}
+footer {
+    color: #bdb7ac;
+    border-color: #3e382d;
+}
+a:focus-visible, button:focus-visible {
+    outline-color: #d8be88;
+}

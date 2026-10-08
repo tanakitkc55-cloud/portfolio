@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="th">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>
+            Projects | My Portfolio
+        </title>
+        <link rel="stylesheet" href="assets/main.css">
+        <script src="assets/main.js" defer>
+        </script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a class="skip" href="#main">
+            ข้ามไปเนื้อหา
+        </a>
+        <!-- เมนูหลัก -->
+        <header>
+            <a class="brand" href="index.html">
+                My Portfolio
+            </a>
+            <nav aria-label="เมนูหลัก">
+                <a href="index.html#about" >
+                    About Me
+                </a>
+                <a href="project.html" aria-current="page">
+                    Projects
+                </a>
+                <a href="index.html#assignments">
+                    Assignments
+                </a>
+                <a href="references.html">
+                    References
+                </a>
+            </nav>
+        </header>
+        <!-- เนื้อหาของหน้า -->
+        <main id="main" class="projects-page">
+        <div class="projects-heading">
+            <h1>My <span>Work</span></h1>
+            <p>เป็นพื้นที่รวบรวมโปรเจกต์ส่วนตัวและโปรเจกต์ที่อยากทำนะคับ</p>
+        </div>
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="project-tags">
+                    <span>#Unity</span>
+                    <span>#Hardware</span>
+                </div> 
+                <h2>Under the sea</h2>
+                <p>ใช้ Unity ผสมกับ Hardware เพื่อสร้างเกม Interacetive ให้ความรู้เกี่ยวกับปัญหาที่เกิดขึ้นใต้ท้องทะเล</p>
+                <hr>
+                <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                        <source src="assets/videos/deepsea.mp4" type="video/mp4">
+                        เบราว์เซอร์นี้ไม่รองรับวิดีโอ <a href="assets/videos/deepsea.mp4">เปิดวิดีโอ</a>
+                    </video>
+                </div>
+                <p><a class="card-link" href="https://www.youtube.com/watch?v=TaITLtLD14A" target="_blank" rel="noopener noreferrer">▶ ลิ้งค์ YouTube</a></p>
+            </article>
+            <article class="project-card">
+                <div class="project-tags">
+                    <span>#Unity</span>
+                    <span>#Hardware</span>
+                </div>
+                <h2>DEEPSEA</h2>
+                <p>เราได้รับบทให้เป็นนักสำรวจใต้น้ำ โดยที่มีผู้เล่น2คนต้องคอยบังคับเรือดำน้ำและแสกนหาสิ่งมีชีวิตและทางไปเรื่อยๆ เพื่อที่จะส่งข้อมูลกลับมายังโลกเบื้องบน</p>
+                <hr>
+                <div class="project-media">
+                    <video controls preload="metadata" playsinline>
+                        <source src="assets/videos/deepsea-project.mp4" type="video/mp4">
+                        เบราว์เซอร์นี้ไม่รองรับวิดีโอ <a href="assets/videos/deepsea-project.mp4">เปิดวิดีโอ</a>
+                    </video>
+                </div>
+            </article>
+        </div>
+    </main>
+        <footer>
+            Web Development Portfolio
+        </footer>
+    </body>
+</html>

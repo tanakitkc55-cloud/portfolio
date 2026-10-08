@@ -1,0 +1,30 @@
+body{font-family:Tahoma,Arial,sans-serif;font-size:16px;line-height:1.7;color:#19283f;background:#f3f6fb}body>h1,body>textarea,body>button,body>hr,body>#topic,body>#reply1,body>#reply2{max-width:760px}img{max-width:100%;height:auto}.assignment-nav{width:100%;max-width:1140px;margin:0 auto 24px;display:flex;gap:18px;flex-wrap:wrap;padding:14px 20px;background:#102b54;border-radius:12px;color:white}.assignment-nav a{color:white;background:transparent;font-size:16px;padding:0;box-shadow:none;text-decoration:none}.assignment-nav a:hover{text-decoration:underline}.assignment-nav p{margin:0}.assignment-source{max-width:1100px;margin:28px auto;font-size:14px}button,input,textarea,select{font:inherit}button,input[type=submit],input[type=reset]{cursor:pointer;min-height:44px}input:not([type=radio]),textarea{max-width:100%}:focus-visible{outline:3px solid #d98919;outline-offset:3px}body:has(#myRegister),body:has(#myLogin),body:has(#message){padding:24px}form{max-width:680px;margin:24px auto}form fieldset{border:1px solid #dce4f0;background:white;border-radius:18px;padding:28px}form input:not([type=radio]):not([type=submit]):not([type=reset]){display:block;width:100%;padding:10px;border:1px solid #acbace;border-radius:7px;margin:8px 0 16px}input[type=submit],input[type=reset],body:has(#message) button{background:#174ba0;color:white;border:0;border-radius:8px;padding:10px 20px;margin:8px}#errormsg{color:#a12020}body:has(#message)>div:not(.assignment-nav){background:white;border-radius:12px;padding:18px;margin:12px auto;min-height:64px;overflow-wrap:anywhere}#message{width:100%;display:block;min-height:120px;margin:20px auto;padding:16px;border-radius:10px;border:1px solid #acbace}body:has(#message)>h1,body:has(#message)>p{margin:24px auto}#layer{max-width:100%}body:has(#start) #layer{width:min(500px,100%);height:auto;aspect-ratio:1}body:has(#start) #container{max-width:500px}#game-status{max-width:540px;width:100%;padding:14px}body:has(#start) .square{width:36px;height:36px;padding:0}body:has(#start) .square:disabled{cursor:default}body:has(#nav-top){padding:24px}body:has(#nav-top) #layer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;width:100%;max-width:1000px}body:has(#nav-top) #layer>div{width:auto;height:auto;min-width:0;margin:0;padding:24px;background:white;border:1px solid #dce4f0;border-radius:14px}body:has(#nav-top) #layer img{width:100%;height:180px;object-fit:contain}#shopping-status{text-align:center}body:has(#nav-top) #nav-top{height:auto}.menu-title{font-weight:700;color:#875100;margin-bottom:5px;font-size:16px}.table_stat{width:100%;table-layout:auto}.flex_container ol{text-align:left;padding-left:24px}ul{font:inherit} @media(max-width:560px){body:has(#nav-top) #layer{grid-template-columns:1fr}form fieldset{padding:18px}.grid-card{min-width:0;padding:18px}.table_stat td{padding:8px}fieldset{max-width:100%}body:has(#message),body:has(#myRegister),body:has(#myLogin){padding:16px}}
+*{box-sizing:border-box}fieldset{min-width:0}body:has(#message)>hr{width:100%}body:has(#message)>label{display:block;max-width:760px;margin:auto}body:has(#message) textarea{width:100%;min-width:0}
+
+/* รูปแบบเรียบง่ายสำหรับงานในชั้นเรียน */
+.assignment-nav { background: #dce8f4; border: 1px solid #bccbd9; border-radius: 0; }
+.assignment-nav a { color: #244f79; }
+form fieldset, body:has(#message)>div:not(.assignment-nav), body:has(#nav-top) #layer>div { border-radius: 0; box-shadow: none; }
+button, input[type=submit], input[type=reset] { box-shadow: none; }
+body:has(#start) { background: #eef3f8; }
+body:has(#start) fieldset, body:has(#start) #layer { border-radius: 0; box-shadow: none; }
+body:has(#start) button#start { background: #315f8b; box-shadow: none; }
+body:has(#start) .square { box-shadow: none; border-radius: 0; transition: none; }
+body:has(#start) .square:hover { transform: none; }
+body:has(#Mpizza) { background: #eef3f8; }
+.grid-card { border-radius: 0; box-shadow: none; background: white; backdrop-filter: none; }
+body:has(#Mpizza) h1, body:has(#Mpizza) h2 { background: none; box-shadow: none; border-radius: 0; color: #244f79; }
+#Mpizza { border: 1px solid #bccbd9; border-radius: 0; box-shadow: none; padding: 0; }
+.ad-card { border-radius: 0; box-shadow: none; }
+.ad-card img { border-radius: 0; }
+.rotate-pizza { animation: none; filter: none; }
+.menu-item { border-radius: 0; box-shadow: none; }
+.menu-item:hover, .ad-card:hover { transform: none; box-shadow: none; }
+
+/* งาน JavaScript 1 และ 2 */
+body:has(#img01), body:has(#myForm) { padding: 20px; }
+body:has(#img01) input, body:has(#img01) textarea { margin: 8px 0; }
+body:has(#img01) button { background: #376ba5; color: white; border: 0; padding: 8px 14px; border-radius: 5px; margin: 8px 5px 8px 0; }
+body:has(#img01) #img01 { width: 180px; height: 180px; object-fit: contain; }
+body:has(#myForm)>p { width: auto; height: auto; max-width: 850px; }
+body:has(#myForm)>h1 { font-size: 26px; overflow-wrap: anywhere; }
